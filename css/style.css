@@ -1,0 +1,493 @@
+:root {
+    --primary: #0d6efd;
+    --white: #fff;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: "Sora", "sans-serif";
+    line-height: 1.7;
+    color: var(--body);
+    overflow-x: hidden;
+}
+
+.event-front {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p .display-4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar .btn {
+    font-size: 15px;
+}
+
+.navbar .nav-link {
+    font-family: Roboto, "sans-serif";
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 8px 5px;
+}
+
+#details {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#details .custh3 {
+    line-height: 3rem;
+}
+
+#details .custspan {
+    font-weight: 600;
+    color: #a30781;
+}
+
+#details .btn-details {
+    padding: 10px;
+    border: 1px solid #ce1092;
+    color: #ce1092;
+}
+
+#details .btn-details:hover {
+    padding: 10px;
+    background: url("/images/619521802429a8fb5e4974ba_triangle_background.PNG")
+        no-repeat;
+    background-size: cover;
+    color: var(--white);
+}
+
+/* Hero */
+
+#hero {
+    background: url(/images/backv.mp4) no-repeat;
+    background-position: center;
+    transition: all 1.5 ease;
+}
+
+#hero a {
+    border: 1px solid #ce1092;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ce1092;
+    text-decoration: none;
+}
+
+#hero a:hover {
+    background: url("/images/619521802429a8fb5e4974ba_triangle_background.PNG")
+        no-repeat;
+    background-size: cover;
+    color: var(--white);
+}
+
+#hero .home-img {
+    animation: homeimg 1.8s linear;
+    transform: scale(2);
+}
+
+@keyframes homeimg {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0);
+        transform: scale(2);
+    }
+}
+
+/* #hero .home-text {
+    animation: hometext 1.5s linear;
+}
+
+
+
+@keyframes hometext {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+*/
+#hero h5 {
+    color: var(--dark);
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+#hero h1 {
+    color: #ce1092;
+    font-weight: 800;
+}
+
+#hero p {
+    color: var(--dark);
+    font-weight: 500;
+}
+
+/* Hero */
+
+/* Card Effect */
+
+#card {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#card {
+    background: url(/images/619521802429a8fb5e4974ba_triangle_background.PNG)
+        no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.carddetail {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    height: 100px;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background: url(/images/619521802429a8fb5e4974ba_triangle_background.PNG);
+    transition: all 0.35s ease;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    border-top: 1px solid rgba(251, 251, 251, 0.5);
+    border-left: 1px solid rgba(251, 251, 251, 0.5);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.carddetail h3,
+h5,
+h1,
+p {
+    color: var(--white);
+    pointer-events: none;
+}
+
+.carddetail:hover h3 {
+    color: var(--dark);
+    pointer-events: none;
+}
+
+.carddetail:hover h5 {
+    color: var(--dark);
+    pointer-events: none;
+}
+.carddetail:hover p {
+    color: var(--dark);
+    pointer-events: none;
+}
+
+.carddetail:hover {
+    background: url(/images/pop.gif);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+.card-effect {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background: url(/images/619521802429a8fb5e4974ba_triangle_background.PNG);
+    transition: all 0.35s ease;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    border-top: 1px solid rgba(251, 251, 251, 0.5);
+    border-left: 1px solid rgba(251, 251, 251, 0.5);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+.card-effect h1 {
+    position: absolute;
+    top: -2px;
+    right: 10px;
+    font-size: 2.2rem;
+    color: rgba(251, 251, 251, 0.1);
+    pointer-events: none;
+}
+
+.card-effect:hover {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.team-member {
+    padding-top: 40px;
+    height: 270px;
+}
+
+/* .card-below {
+    padding-bottom: 80px;
+} */
+
+.card-effect h3,
+h5,
+h1,
+p {
+    color: var(--white);
+    pointer-events: none;
+}
+/* Card Effect */
+
+/* desc */
+
+#desc li {
+    list-style: circle;
+    color: var(--dark);
+}
+
+/* desc */
+
+/* Registeration */
+#payment .regist-h1 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+#payment img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#payment li {
+    color: var(--dark);
+}
+
+#payment a {
+    color: #ce1092;
+    border: 1px solid #ce1092;
+    padding: 10px 12px;
+    margin: 40px 15px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+#payment a:hover {
+    background: url("/images/619521802429a8fb5e4974ba_triangle_background.PNG")
+        no-repeat;
+    background-size: cover;
+    color: var(--white);
+}
+
+#payment span {
+    list-style: none;
+    font-weight: 700;
+}
+
+#payment p {
+    color: var(--dark);
+    font-weight: 500;
+}
+
+/* Registeration */
+
+.iconbox {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 28px;
+    border-radius: 100px;
+    flex: none;
+}
+
+.service {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.service::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    background-color: var(--primary);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.service:hover .iconbox {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.service:hover h5,
+.service:hover p {
+    color: var(--white);
+}
+
+.service:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+.col-img {
+    background-image: url(/images/manage.gif);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.project {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.4s ease;
+}
+
+.project .custcolor {
+    color: var(--dark);
+}
+
+.project img {
+    transition: all 0.4s ease;
+}
+
+.project:hover .overlay {
+    background-color: rgba(21, 20, 51, 0.8);
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project:hover .custcolor {
+    color: var(--white);
+}
+
+.price-cont {
+    background-image: url(/images/test3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pricing ul li {
+    margin-top: 8px;
+}
+
+.pricing i {
+    font-size: 12px;
+    color: var(--primary);
+}
+
+.blog-post:hover img {
+    transition: all 0.45s ease;
+}
+
+.blog-post:hover img {
+    transform: scale(1.1);
+}
+
+.blog-post h5 {
+    transition: all 0.45s ease;
+}
+
+.blog-post p {
+    transition: all 0.45s ease;
+}
+
+.blog-post:hover h5 {
+    font-size: 21px;
+}
+
+.blog-post:hover p {
+    font-size: 15px;
+}
+
+.footer-top {
+    padding-top: 90px;
+    padding-bottom: 50px;
+    background-color: var(--dark);
+}
+
+.footer-top .logo {
+    width: 120px;
+}
+
+.footer-top a {
+    color: var(--body);
+}
+
+.footer-top a:hover {
+    color: var(--white);
+}
+
+.footer-top i {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 8px 4px;
+    color: var(--white);
+    transition: all 0.45s ease;
+}
+
+.footer-top .footlogo:hover {
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.footer-bottom {
+    background-color: var(--dark);
+}
+
+.footer-top li {
+    font-size: 14px;
+}
