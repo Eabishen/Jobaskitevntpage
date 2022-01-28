@@ -110,7 +110,7 @@ img {
 }
 
 #hero .home-img {
-    animation: homeimg 1.8s linear;
+    /* animation: homeimg 1.8s linear; */
     transform: scale(2);
 }
 
