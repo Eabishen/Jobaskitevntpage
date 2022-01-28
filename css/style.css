@@ -284,6 +284,7 @@ p {
 
 #desc {
     overscroll-behavior: contain;
+    overflow: hidden;
 }
 
 #desc h2 {
