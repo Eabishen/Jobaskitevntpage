@@ -306,6 +306,7 @@ p {
     list-style: circle;
     color: var(--dark);
     pointer-events: none;
+    text-align: justify;
 }
 
 /* desc */
