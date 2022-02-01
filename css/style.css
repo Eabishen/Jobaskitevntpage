@@ -15,6 +15,7 @@ body {
     line-height: 1.7;
     color: var(--body);
     overscroll-behavior: contain;
+    position: relative;
 }
 
 section {
@@ -43,7 +44,6 @@ img {
 
 .navbar {
     box-shadow: var(--box-shadow);
-    overflow: hidden;
 }
 
 .navbar .btn {
@@ -61,8 +61,8 @@ img {
 }
 
 #details {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 50px;
     overflow-x: hidden;
     overscroll-behavior: contain;
 }
@@ -174,6 +174,23 @@ img {
     font-weight: 500;
 }
 
+#hero .fixedbtn {
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    padding: 10px 12px;
+    background-color: rgb(255, 255, 255);
+    color: #ce1092;
+    font-weight: 700;
+    border: 1px solid;
+    z-index: 9999;
+    display: block;
+}
+
+.vanish {
+    display: none;
+}
+
 /* Hero */
 
 /* Card Effect */
@@ -196,7 +213,6 @@ img {
 
 .container {
     position: relative;
-    z-index: 1;
 }
 
 .carddetail {
@@ -531,4 +547,16 @@ p {
 .footer-top li {
     font-size: 14px;
     text-align: justify;
+}
+
+@media (max-device-width: 882px) {
+    #hero .fixedbtn {
+        display: none;
+    }
+}
+
+@media (max-device-width: 480px) {
+    .footer-bottom {
+        font-size: 11px;
+    }
 }
