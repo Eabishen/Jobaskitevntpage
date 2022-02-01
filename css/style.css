@@ -212,12 +212,16 @@ img {
         no-repeat;
     background-size: cover;
     color: var(--white);
+    border-top: 1px solid rgba(251, 251, 251, 0.5);
+    border-left: 1px solid rgba(251, 251, 251, 0.5);
 }
 #hero .fixedbtn2:hover {
     background: url("/images/619521802429a8fb5e4974ba_triangle_background.PNG")
         no-repeat;
     background-size: cover;
     color: var(--white);
+    border-top: 1px solid rgba(251, 251, 251, 0.5);
+    border-left: 1px solid rgba(251, 251, 251, 0.5);
 }
 
 #hero .vanish {
@@ -587,6 +591,10 @@ p {
     #hero .fixedbtn {
         display: none;
     }
+
+    #hero .fixedbtn2 {
+        display: none;
+    }
     .footer-bottom {
         font-size: 14px;
     }
@@ -596,6 +604,11 @@ p {
     #hero .fixedbtn {
         display: none;
     }
+
+    #hero .fixedbtn2 {
+        display: none;
+    }
+
     .footer-bottom {
         font-size: 12px;
     }
